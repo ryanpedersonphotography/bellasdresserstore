@@ -91,6 +91,20 @@ npm run preview
 - Consider adding a favicon and Apple touch icons
 - May want to implement analytics (Google Analytics, etc.)
 
+## Configuration Locations
+
+### Project-Specific Config
+- `.env.local` - Contains Netlify site ID, GitHub repo info, and project details
+- Do NOT commit this file to git (already in .gitignore)
+
+### Global User Config
+- `~/.config/claude-automation/user-config.json` - User-wide settings for Netlify, GitHub, and defaults
+- `/Users/ryanpederson/Dev/websites/.env` - Namecheap API credentials
+
+### CLI Authentication
+- Netlify CLI: Managed internally by `netlify login`
+- GitHub CLI: Managed internally by `gh auth login`
+
 ## Last Updated
 - Date: 2025-05-24
-- Last Task: Created GitHub repository and initial commit
+- Last Task: Connected domain to Netlify and organized configuration files
