@@ -87,10 +87,35 @@
     }
     </script>
     
-    <!-- Fonts -->
+    <!-- Resource Hints for Performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+      /* Critical above-the-fold styles */
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      :root { --fuchsia-pink: #D21B60; --golden-yellow: #F5C400; --navy-blue: #18314F; --white: #FFFFFF; --light-gray: #F5F5F5; --text-dark: #333333; }
+      body { font-family: 'Open Sans', sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--white); }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      header { background-color: var(--fuchsia-pink); color: var(--white); padding: 2rem 0; text-align: center; border-bottom: 6px solid var(--golden-yellow); }
+      .store-header { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+      .store-name { display: flex; align-items: baseline; gap: 0.5rem; font-size: 3rem; margin-bottom: 0.5rem; }
+      .script { font-family: 'Dancing Script', cursive; font-weight: 700; }
+      .serif { font-family: 'Playfair Display', serif; font-weight: 700; }
+      .store-name .script { font-size: 3.5rem; color: var(--white); }
+      .store-name .serif { font-size: 2.5rem; color: var(--golden-yellow); text-transform: uppercase; letter-spacing: 0.1em; }
+      .tagline { font-size: 1.1rem; font-style: italic; opacity: 0.95; }
+    </style>
+    
+    <!-- Optimized Font Loading -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    </noscript>
   </head>
   <body>
     <header>

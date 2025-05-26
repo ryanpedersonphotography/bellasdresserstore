@@ -120,7 +120,7 @@ header {
   border-radius: 4px;
   font-weight: 600;
   font-size: 1.1rem;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   margin-top: 1rem;
 }
 
@@ -285,6 +285,11 @@ footer a:hover {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Font Display Optimization */
+@font-face {
+  font-display: swap;
 }
 
 /* Print Styles */
