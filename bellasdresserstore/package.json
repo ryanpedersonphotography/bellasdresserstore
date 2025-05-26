@@ -9,7 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sharp": "^0.34.2",
     "terser": "^5.39.2",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-html": "^3.2.2"
   }
 }

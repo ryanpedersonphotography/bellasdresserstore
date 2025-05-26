@@ -93,8 +93,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
+    <!-- Preload Critical Fonts -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/dancingscript/v25/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i0HQfYD.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2" as="font" type="font/woff2" crossorigin>
+    
     <!-- Critical CSS Inline -->
     <style>
+      /* Font-face declarations with font-display: swap */
+      @font-face {
+        font-family: 'Dancing Script';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/dancingscript/v25/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7B1i0HQfYD.woff2) format('woff2');
+      }
+      @font-face {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtM.woff2) format('woff2');
+      }
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+      }
+      
       /* Critical above-the-fold styles */
       * { margin: 0; padding: 0; box-sizing: border-box; }
       :root { --fuchsia-pink: #D21B60; --golden-yellow: #F5C400; --navy-blue: #18314F; --white: #FFFFFF; --light-gray: #F5F5F5; --text-dark: #333333; }
@@ -113,12 +141,8 @@
       .hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 2rem; }
     </style>
     
-    <!-- Optimized Font Loading -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    </noscript>
+    <!-- Defer Non-Critical JS -->
+    <script type="module" src="/src/main.js" defer></script>
   </head>
   <body>
     <header>
@@ -184,6 +208,5 @@
       </div>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
