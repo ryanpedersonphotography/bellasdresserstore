@@ -136,9 +136,16 @@
       .store-name .script { font-size: 3.5rem; color: var(--white); }
       .store-name .serif { font-size: 2.5rem; color: var(--golden-yellow); text-transform: uppercase; letter-spacing: 0.1em; }
       .tagline { font-size: 1.1rem; font-style: italic; opacity: 0.95; }
+      nav { background: var(--white); padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+      nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+      nav a { color: var(--navy-blue); text-decoration: none; font-weight: 500; transition: color 0.3s; padding: 0.5rem 1rem; }
+      nav a:hover, nav a.active { color: var(--fuchsia-pink); }
       .hero { background-color: var(--light-gray); padding: 4rem 0; }
       .hero-content { max-width: 800px; margin: 0 auto; text-align: center; }
       .hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 2rem; }
+      @media (max-width: 768px) {
+        nav ul { gap: 1rem; font-size: 0.9rem; }
+      }
     </style>
     
     <!-- Defer Non-Critical JS -->
@@ -152,10 +159,25 @@
             <span class="script">Bella's</span>
             <span class="serif">DRESSER</span>
           </h1>
-          <p class="tagline">Your downtown destination for dresses</p>
+          <p class="tagline">Pequot Lakes' top boutique for dresses</p>
         </div>
       </div>
     </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/shop.html">Shop Dresses</a></li>
+          <li><a href="/visit.html">Visit Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/blog.html">Style Blog</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <main>
       <section class="hero">
