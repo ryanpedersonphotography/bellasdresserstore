@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Style Blog - Bella's Dresser | Fashion Tips for Brainerd Lakes Tourists & Locals</title>
+    <meta name="description" content="Fashion blog featuring summer dress styles for the Brainerd Lakes area, what to wear at Breezy Point Resort, Pequot Lakes shopping guides, and boutique fashion trends.">
+    <meta name="keywords" content="Brainerd Lakes fashion blog, summer dress styles Minnesota, Breezy Point resort wear, Pequot Lakes shopping guide, tourist fashion tips">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bella's Dresser Style Blog - Fashion for Lake Life">
+    <meta property="og:description" content="Fashion tips, seasonal guides, and style advice for the Brainerd Lakes area. Perfect for tourists and locals alike!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bellasdresserstore.com/blog.html">
+    
+    <!-- Critical CSS Inline -->
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      :root { --fuchsia-pink: #D21B60; --golden-yellow: #F5C400; --navy-blue: #18314F; --white: #FFFFFF; --light-gray: #F5F5F5; --text-dark: #333333; }
+      body { font-family: Georgia, serif; line-height: 1.7; color: var(--text-dark); background-color: var(--white); }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+      header { background-color: var(--fuchsia-pink); color: var(--white); padding: 2rem 0; text-align: center; border-bottom: 6px solid var(--golden-yellow); }
+      .store-header { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+      .store-name { display: flex; align-items: baseline; gap: 0.5rem; font-size: 3rem; margin-bottom: 0.5rem; }
+      .store-name span:first-child { font-size: 3.5rem; font-style: italic; }
+      .store-name span:last-child { font-size: 2.5rem; color: var(--golden-yellow); text-transform: uppercase; letter-spacing: 0.1em; }
+      nav { background: var(--white); padding: 1rem 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+      nav ul { list-style: none; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+      nav a { color: var(--navy-blue); text-decoration: none; font-weight: 500; transition: color 0.3s; padding: 0.5rem 1rem; }
+      nav a:hover, nav a.active { color: var(--fuchsia-pink); }
+      .page-hero { background: linear-gradient(135deg, #fdf0f3 0%, #fdfcf8 100%); padding: 4rem 0; text-align: center; margin-bottom: 3rem; }
+      .page-hero h1 { font-size: 2.5rem; color: var(--navy-blue); font-weight: 300; margin-bottom: 1rem; }
+      .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-bottom: 4rem; }
+      .blog-post { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; }
+      .blog-post:hover { transform: translateY(-5px); }
+      .blog-header { background: var(--light-gray); padding: 2rem; position: relative; }
+      .blog-date { color: var(--fuchsia-pink); font-weight: bold; margin-bottom: 0.5rem; }
+      .blog-title { color: var(--navy-blue); font-size: 1.8rem; margin-bottom: 1rem; }
+      .blog-meta { color: #666; font-size: 0.9rem; }
+      .blog-content { padding: 2rem; }
+      .blog-content p { margin-bottom: 1rem; }
+      .read-more { color: var(--fuchsia-pink); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 1rem; }
+      .read-more:hover { text-decoration: underline; }
+      .featured-post { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+      .featured-content { padding: 3rem; }
+      .featured-image { background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: #999; }
+      .blog-categories { background: var(--navy-blue); color: var(--white); padding: 3rem 0; text-align: center; margin-bottom: 3rem; }
+      .category-list { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+      .category-tag { background: var(--golden-yellow); color: var(--navy-blue); padding: 0.5rem 1.5rem; border-radius: 20px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+      .category-tag:hover { background: #e6b500; }
+      footer { background: var(--navy-blue); color: var(--white); padding: 3rem 0; text-align: center; }
+      .footer-info { margin-bottom: 1rem; }
+      .footer-info a { color: var(--golden-yellow); text-decoration: none; }
+      @media (max-width: 768px) {
+        .page-hero h1 { font-size: 2rem; }
+        nav ul { gap: 1rem; font-size: 0.9rem; }
+        .featured-post { grid-template-columns: 1fr; }
+        .blog-grid { grid-template-columns: 1fr; }
+      }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="store-header">
+          <div class="store-name">
+            <span>Bella's</span>
+            <span>DRESSER</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/shop.html">Shop Dresses</a></li>
+          <li><a href="/visit.html">Visit Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/blog.html" class="active">Style Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Bella's Style Blog</h1>
+          <p>Fashion Tips & Trends for Lake Life</p>
+        </div>
+      </section>
+
+      <section class="blog-categories">
+        <div class="container">
+          <h2>Browse by Category</h2>
+          <div class="category-list">
+            <a href="#" class="category-tag">Summer Styles</a>
+            <a href="#" class="category-tag">Resort Wear</a>
+            <a href="#" class="category-tag">Tourist Guides</a>
+            <a href="#" class="category-tag">Prom & Formal</a>
+            <a href="#" class="category-tag">Local Events</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="blog-grid">
+          <article class="featured-post">
+            <div class="featured-content">
+              <p class="blog-date">June 15, 2024</p>
+              <h2 class="blog-title">Top Summer Dress Styles in the Brainerd Lakes Area</h2>
+              <p class="blog-meta">By Bella's Team | Summer Fashion</p>
+              <div class="blog-content">
+                <p>Summer in the Brainerd Lakes area calls for versatile dresses that transition seamlessly from boat days to dinner dates. This season, we're seeing tourists and locals embrace these must-have styles:</p>
+                <p><strong>1. Flowy Maxi Dresses:</strong> Perfect for strolling through downtown Nisswa or attending outdoor concerts at Gull Lake. The longer length provides sun protection while keeping you cool.</p>
+                <p><strong>2. Wrap Dresses:</strong> Flattering on everyone and ideal for resort dining. Our customers staying at Breezy Point love how these pack easily and resist wrinkles.</p>
+                <p><strong>3. Sundresses with Pockets:</strong> Because who doesn't love pockets? Great for carrying your phone while shopping in Pequot Lakes or exploring Crosslake's art fair.</p>
+                <a href="#" class="read-more">Continue Reading →</a>
+              </div>
+            </div>
+            <div class="featured-image">
+              <p>Featured Image</p>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <p class="blog-date">May 28, 2024</p>
+              <h3 class="blog-title">What to Wear for a Weekend at Breezy Point Resort</h3>
+              <p class="blog-meta">By Sarah | Resort Fashion</p>
+            </div>
+            <div class="blog-content">
+              <p>Planning a getaway to Breezy Point Resort? As Pequot Lakes' premier dress boutique, we've helped countless tourists pack perfectly for their lake vacation. Here's your complete weekend wardrobe guide...</p>
+              <p>For daytime activities like golfing or spa visits, opt for comfortable yet stylish casual dresses. Evening dinners at the resort call for something more elegant - think cocktail dresses or sophisticated resort wear...</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <p class="blog-date">May 10, 2024</p>
+              <h3 class="blog-title">Prom 2024: Trends We're Seeing in Pequot Lakes</h3>
+              <p class="blog-meta">By Bella's Team | Prom & Formal</p>
+            </div>
+            <div class="blog-content">
+              <p>Prom season is here! Our boutique is buzzing with excited students from Pequot Lakes, Brainerd, and surrounding schools. This year's trending styles include...</p>
+              <p>Two-piece gowns are having a major moment, along with romantic florals and bold jewel tones. We're also seeing a return to classic elegance with sleek silhouettes...</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <p class="blog-date">April 22, 2024</p>
+              <h3 class="blog-title">Your Guide to Downtown Pequot Lakes Shopping</h3>
+              <p class="blog-meta">By Local Expert | Shopping Guide</p>
+            </div>
+            <div class="blog-content">
+              <p>Make the most of your shopping trip to downtown Pequot Lakes! Start your day with coffee at a local café, then explore our charming Main Street and Government Drive boutiques...</p>
+              <p>Bella's Dresser anchors the fashion scene, but don't miss the antique shops, art galleries, and gift stores that make our downtown a tourist favorite...</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <p class="blog-date">April 5, 2024</p>
+              <h3 class="blog-title">Wedding Guest Dresses for Lakes Area Venues</h3>
+              <p class="blog-meta">By Style Team | Wedding Fashion</p>
+            </div>
+            <div class="blog-content">
+              <p>Attending a wedding at Grand View Lodge, Breezy Point, or one of our beautiful lakeside venues? Choosing the right dress depends on the venue and time of day...</p>
+              <p>For outdoor ceremonies near Gull Lake, consider breathable fabrics and midi lengths that won't catch in the lake breeze. Evening receptions call for more formal attire...</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+
+          <article class="blog-post">
+            <div class="blog-header">
+              <p class="blog-date">March 18, 2024</p>
+              <h3 class="blog-title">Spring Fashion Arrives in the Brainerd Lakes</h3>
+              <p class="blog-meta">By Bella's Buyer | New Arrivals</p>
+            </div>
+            <div class="blog-content">
+              <p>As the ice melts off the lakes, our spring collection is heating up! We've just received stunning new arrivals perfect for the upcoming tourist season...</p>
+              <p>Pastel florals, lightweight fabrics, and versatile styles that transition from cool mornings to warm afternoons. Stop by our Pequot Lakes boutique to see what's new...</p>
+              <a href="#" class="read-more">Read More →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-info">
+          <p><strong>Bella's Dresser</strong><br>
+          976 Government Dr, Pequot Lakes, MN 56472<br>
+          <a href="tel:2185684783">(218) 568-4783</a> | <a href="mailto:bellasdresserstore@gmail.com">bellasdresserstore@gmail.com</a></p>
+        </div>
+        <p>&copy; 2024 Bella's Dresser. Your Source for Lake Life Style</p>
+      </div>
+    </footer>
+</body>
+</html>

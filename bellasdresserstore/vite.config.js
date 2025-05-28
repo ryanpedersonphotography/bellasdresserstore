@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [
@@ -25,8 +26,18 @@ export default defineConfig({
         comments: false
       }
     },
-    // Tree-shaking configuration
+    // Multi-page app configuration
     rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about.html'),
+        shop: resolve(__dirname, 'shop.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        visit: resolve(__dirname, 'visit.html'),
+        faq: resolve(__dirname, 'faq.html'),
+        reviews: resolve(__dirname, 'reviews.html'),
+        blog: resolve(__dirname, 'blog.html')
+      },
       output: {
         // Manual chunks for better caching
         manualChunks: (id) => {
