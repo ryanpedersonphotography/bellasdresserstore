@@ -1,2 +1,25 @@
 # Local Netlify folder
 .netlify
+
+# Image files - use CDN/external hosting for images
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.svg
+*.ico
+*.bmp
+*.tiff
+
+# AI generation artifacts
+*-summer*.txt
+*-resort*.txt
+*-prom*.txt
+*-downtown*.txt
+*-wedding*.txt
+*-spring*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
