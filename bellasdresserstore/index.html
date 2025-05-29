@@ -143,8 +143,28 @@
       .hero { background-color: var(--light-gray); padding: 4rem 0; }
       .hero-content { max-width: 800px; margin: 0 auto; text-align: center; }
       .hero h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 2rem; }
+      .hero p { font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-dark); line-height: 1.8; }
+      .hours-location { padding: 4rem 0; background-color: var(--white); }
+      .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 800px; margin: 0 auto; }
+      .hours-card, .location-card { background-color: var(--light-gray); padding: 2rem; border-radius: 8px; border: 3px solid var(--golden-yellow); }
+      .hours-card h3, .location-card h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--navy-blue); margin-bottom: 1.5rem; }
+      .hours-list { list-style: none; }
+      .hours-list li { display: flex; justify-content: space-between; padding: 0.5rem 0; border-bottom: 1px solid rgba(210, 27, 96, 0.2); }
+      .hours-list li:last-child { border-bottom: none; }
+      .day { font-weight: 600; color: var(--navy-blue); }
+      .time { color: var(--text-dark); }
+      address { font-style: normal; line-height: 1.8; }
+      address strong { color: var(--fuchsia-pink); font-size: 1.2rem; display: block; margin-bottom: 0.5rem; }
+      address a { color: var(--navy-blue); text-decoration: none; font-weight: 600; }
+      address a:hover { color: var(--fuchsia-pink); text-decoration: underline; }
+      footer { background-color: var(--navy-blue); color: var(--white); padding: 2rem 0; text-align: center; }
+      .footer-content p { margin: 0.5rem 0; }
+      footer a { color: var(--golden-yellow); text-decoration: none; }
+      footer a:hover { text-decoration: underline; }
       @media (max-width: 768px) {
         nav ul { gap: 1rem; font-size: 0.9rem; }
+        .info-grid { grid-template-columns: 1fr; gap: 2rem; }
+        .hours-card, .location-card { padding: 1.5rem; }
       }
     </style>
     
