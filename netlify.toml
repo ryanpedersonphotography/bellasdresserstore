@@ -1,0 +1,6 @@
+[build]
+command = "cd bellasdresserstore && npm install && npm run build"
+publish = "bellasdresserstore/dist"
+
+[build.environment]
+NODE_VERSION = "18"
