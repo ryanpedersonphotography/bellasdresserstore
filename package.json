@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@google-analytics/data": "^5.1.0"
+  }
+}

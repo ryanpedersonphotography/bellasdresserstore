@@ -4,28 +4,11 @@
 User-agent: *
 Allow: /
 
+# Block access to development files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.json
+Disallow: /vite.config.js
+
 # Sitemap location
 Sitemap: https://bellasdresserstore.com/sitemap.xml
-
-# Allow all major search engines to crawl our content
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Block common bot traffic that doesn't help SEO
-User-agent: AhrefsBot
-Disallow: /
-
-User-agent: MJ12bot
-Disallow: /
-
-User-agent: DotBot
-Disallow: /
-
-# Crawl-delay for respectful crawling
-Crawl-delay: 1

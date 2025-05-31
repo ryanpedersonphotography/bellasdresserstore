@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
     
     <!-- SEO Meta Tags -->
     <title>Style Blog - Bella's Dresser | Fashion Tips for Brainerd Lakes Tourists & Locals</title>
@@ -14,6 +15,16 @@
     <meta property="og:description" content="Fashion tips, seasonal guides, and style advice for the Brainerd Lakes area. Perfect for tourists and locals alike!">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://bellasdresserstore.com/blog.html">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9D58CDT70"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-T9D58CDT70');
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -78,7 +89,7 @@
       .page-hero h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--navy-blue); margin-bottom: 1rem; }
       .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem; margin-bottom: 4rem; }
       .blog-post { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; position: relative; }
-      .blog-image { width: 100%; height: 200px; object-fit: cover; background: var(--light-gray); }
+      .blog-image { width: 100%; height: 300px; object-fit: cover; background: var(--light-gray); }
       .blog-post:hover { transform: translateY(-5px); }
       .blog-header { background: var(--light-gray); padding: 2rem; position: relative; }
       .blog-date { color: var(--fuchsia-pink); font-weight: bold; margin-bottom: 0.5rem; }
@@ -88,9 +99,6 @@
       .blog-content p { margin-bottom: 1rem; }
       .read-more { color: var(--fuchsia-pink); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 1rem; }
       .read-more:hover { text-decoration: underline; }
-      .featured-post { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
-      .featured-content { padding: 3rem; }
-      .featured-image { background: var(--light-gray); display: flex; align-items: center; justify-content: center; color: #999; }
       footer { background-color: var(--navy-blue); color: var(--white); padding: 2rem 0; text-align: center; margin-top: 0; }
       .footer-content p { margin: 0.5rem 0; }
       footer a { color: var(--golden-yellow); text-decoration: none; }
@@ -98,7 +106,6 @@
       @media (max-width: 768px) {
         .page-hero h1 { font-size: 2rem; }
         nav ul { gap: 1rem; font-size: 0.9rem; }
-        .featured-post { grid-template-columns: 1fr; }
         .blog-grid { grid-template-columns: 1fr; }
       }
     </style>
@@ -171,93 +178,67 @@
 
       <section class="container">
         <div class="blog-grid">
-          <article class="featured-post">
-            <div class="featured-content">
-              <p class="blog-date">June 20, 2024</p>
-              <h2 class="blog-title">Bella's Favorite Places Around Pequot</h2>
+          <article class="blog-post">
+            <img src="/assets/favorite_places_blog.png" alt="Beautiful Brainerd Lakes area with Grand View Lodge and local restaurants around Pequot Lakes Minnesota - Bella's favorite dining and entertainment spots" class="blog-image">
+            <div class="blog-header">
+              <p class="blog-date">June 20, 2025</p>
+              <h3 class="blog-title">Bella's Favorite Places Around Pequot</h3>
               <p class="blog-meta">By Bella Dubois | Local Guide</p>
-              <div class="blog-content">
-                <p><em>Mes chéris!</em> After living in this enchanting corner of Minnesota, I've discovered the most delightful spots that remind me why I fell in love with the Brainerd Lakes area. From the magnificent Grand View Lodge to charming local bistros like Lucky's Tavern and A-Pine Family Restaurant!</p>
-                <p><strong>Grand View Lodge:</strong> <em>C'est magnifique!</em> This resort reminds me of the grand hotels of the French Riviera, but with unmistakable Minnesota warmth. Eight restaurants, championship golf, and 2,500 feet of pristine beach on Gull Lake.</p>
-                <p><strong>Local Dining Gems:</strong> Lucky's Tavern with its Irish charm, A-Pine Family Restaurant with pies that rival Parisian patisseries, and Lakes Tavern's gorgeous 60-seat patio with fire features. Each captures the warmth I love about Minnesota hospitality!</p>
-                <a href="/blog/bellas-favorite-places-around-pequot.html" class="read-more">Continue Reading →</a>
-              </div>
             </div>
-            <div class="featured-image">
-              <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=450&fit=crop&crop=center" alt="Beautiful Brainerd Lakes area with Grand View Lodge and local restaurants around Pequot Lakes Minnesota - Bella's favorite dining and entertainment spots" style="width: 100%; height: 100%; object-fit: cover;">
+            <div class="blog-content">
+              <p><em>Mes chéris!</em> After living in this enchanting corner of Minnesota, I've discovered the most delightful spots that remind me why I fell in love with the Brainerd Lakes area. From the magnificent Grand View Lodge to charming local bistros!</p>
+              <a href="/blog/bellas-favorite-places-around-pequot.html" class="read-more">Read More →</a>
             </div>
           </article>
 
           <article class="blog-post">
-            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=200&fit=crop&crop=center" alt="Summer dress styles 2024 - Bella's Dresser boutique owner modeling elegant maxi dress perfect for Gull Lake vacations and Breezy Point Resort dinners in Pequot Lakes MN" class="blog-image">
+            <img src="/assets/blog_post_lake.png" alt="Summer dress styles 2025 - Bella's Dresser boutique owner modeling elegant maxi dress perfect for Gull Lake vacations and Breezy Point Resort dinners in Pequot Lakes MN" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">June 15, 2024</p>
+              <p class="blog-date">June 15, 2025</p>
               <h3 class="blog-title">Top Summer Dress Styles in the Brainerd Lakes Area</h3>
               <p class="blog-meta">By Bella Dubois | Summer Fashion</p>
             </div>
             <div class="blog-content">
               <p><em>Bonjour mes chéries!</em> As a French fashionista who has fallen in love with the magical Brainerd Lakes area, I am absolutely enchanted by how our summer styles can capture both European elegance and Minnesota lake life charm.</p>
-              <p><strong>1. Flowing Maxi Dresses:</strong> <em>Magnifique!</em> These remind me of the summer dresses we wear in Provence, but perfect for your boat days on Gull Lake. The way they dance in the lake breeze while you stroll through downtown Nisswa? Pure poetry, darlings!</p>
-              <a href="/blog/summer-dress-styles-brainerd-lakes.html" class="read-more">Continue Reading →</a>
-            </div>
-          </article>
-
-          <article class="featured-post">
-            <div class="featured-content">
-              <p class="blog-date">June 15, 2024</p>
-              <h2 class="blog-title">Top Summer Dress Styles in the Brainerd Lakes Area</h2>
-              <p class="blog-meta">By Bella Dubois | Summer Fashion</p>
-              <div class="blog-content">
-                <p><em>Bonjour mes chéries!</em> As a French fashionista who has fallen in love with the magical Brainerd Lakes area, I am absolutely enchanted by how our summer styles can capture both European elegance and Minnesota lake life charm.</p>
-                <p><strong>1. Flowing Maxi Dresses:</strong> <em>Magnifique!</em> These remind me of the summer dresses we wear in Provence, but perfect for your boat days on Gull Lake. The way they dance in the lake breeze while you stroll through downtown Nisswa? Pure poetry, darlings!</p>
-                <p><strong>2. Wrap Dresses:</strong> Ah, the classic wrap! This silhouette has graced French women for decades because it is universally flattering. When you're dining at Breezy Point Resort, you want something chic yet comfortable - the wrap dress delivers both with that perfect <em>je ne sais quoi</em>.</p>
-                <p><strong>3. Sundresses with Pockets:</strong> You Americans and your obsession with pockets! But I must admit, it's rather practical. Perfect for carrying your phone while discovering the charming boutiques of Pequot Lakes or browsing Crosslake's delightful art fair.</p>
-                <a href="/blog/summer-dress-styles-brainerd-lakes.html" class="read-more">Continue Reading →</a>
-              </div>
-            </div>
-            <div class="featured-image">
-              <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&h=450&fit=crop&crop=center" alt="Summer dress styles 2024 - Bella's Dresser boutique owner modeling elegant maxi dress perfect for Gull Lake vacations and Breezy Point Resort dinners in Pequot Lakes MN" style="width: 100%; height: 100%; object-fit: cover;">
+              <a href="/blog/summer-dress-styles-brainerd-lakes.html" class="read-more">Read More →</a>
             </div>
           </article>
 
           <article class="blog-post">
-            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=200&fit=crop&crop=center" alt="Resort wear dresses for Breezy Point Resort - Elegant evening dresses and cocktail attire for Minnesota lake resorts available at Bella's Dresser Pequot Lakes" class="blog-image">
+            <img src="/assets/what_to_wear_blog.png" alt="Resort wear dresses for Breezy Point Resort - Elegant evening dresses and cocktail attire for Minnesota lake resorts available at Bella's Dresser Pequot Lakes" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">May 28, 2024</p>
+              <p class="blog-date">May 28, 2025</p>
               <h3 class="blog-title">What to Wear for a Weekend at Breezy Point Resort</h3>
               <p class="blog-meta">By Bella Dubois | Resort Fashion</p>
             </div>
             <div class="blog-content">
-              <p><em>Mes chères!</em> Planning a weekend at the magnificent Breezy Point Resort? <em>Quelle aventure!</em> As someone who has spent countless weekends at the finest resorts from Cannes to this charming Minnesota gem, let me share the secrets of perfect resort dressing.</p>
-              <p><strong>Day 1 - Arrival in Style:</strong> Choose a flowing midi dress in breathable linen or cotton - think French Riviera meets Minnesota lakes. Pack a light cardigan for the evening breeze off Pelican Lake. <em>Trust me, mes amis,</em> you'll thank me when other guests are shivering in their shorts!</p>
+              <p><em>Mes chères!</em> Planning a weekend at the magnificent Breezy Point Resort? <em>Quelle aventure!</em> As someone who has spent countless weekends at the finest resorts, let me share the secrets of perfect resort dressing.</p>
               <a href="/blog/breezy-point-resort-weekend-fashion.html" class="read-more">Read More →</a>
             </div>
           </article>
 
           <article class="blog-post">
-            <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=800&h=200&fit=crop&crop=center" alt="Prom dresses 2024 Pequot Lakes MN - Romantic floral and jewel tone formal gowns for Brainerd Lakes area high school proms at Bella's Dresser boutique" class="blog-image">
+            <img src="/assets/prom_dress_blog.png" alt="Prom dresses 2025 Pequot Lakes MN - Romantic floral and jewel tone formal gowns for Brainerd Lakes area high school proms at Bella's Dresser boutique" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">May 10, 2024</p>
-              <h3 class="blog-title">Prom 2024: Trends We're Seeing in Pequot Lakes</h3>
+              <p class="blog-date">May 10, 2025</p>
+              <h3 class="blog-title">Prom 2025: Trends We're Seeing in Pequot Lakes</h3>
               <p class="blog-meta">By Bella Dubois | Prom & Formal</p>
             </div>
             <div class="blog-content">
-              <p><em>Ah, mes petites princesses!</em> Prom season brings such joy to my heart - watching these beautiful young women transform into goddesses for their special night. In France, we call this moment <em>"l'épanouissement"</em> - the blooming.</p>
-              <p><strong>This year's <em>magnifique</em> trends:</strong> Two-piece gowns are having their moment (finally! I've been advocating this French approach for years), romantic florals that would make Monet weep, and jewel tones deep enough to rival the crown jewels. But remember, <em>ma chérie,</em> confidence is your best accessory!</p>
-              <a href="/blog/prom-2024-trends-pequot-lakes.html" class="read-more">Read More →</a>
+              <p><em>Ah, mes petites princesses!</em> Prom season brings such joy to my heart - watching these beautiful young women transform into goddesses for their special night. This year's trends are <em>magnifique!</em></p>
+              <a href="/blog/prom-2025-trends-pequot-lakes.html" class="read-more">Read More →</a>
             </div>
           </article>
 
           <article class="blog-post">
             <img src="https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?w=800&h=200&fit=crop&crop=center" alt="Downtown Pequot Lakes shopping guide - Main Street boutiques and dress shops near Bella's Dresser on Government Drive with walkable restaurants and cafes" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">April 22, 2024</p>
+              <p class="blog-date">April 22, 2025</p>
               <h3 class="blog-title">Your Guide to Downtown Pequot Lakes Shopping</h3>
               <p class="blog-meta">By Bella Dubois | Shopping Guide</p>
             </div>
             <div class="blog-content">
               <p><em>Bonjour, mes chères shoppers!</em> Welcome to my petit paradis - downtown Pequot Lakes! When I first arrived from Lyon, I was enchanted by this charming Main Street that reminded me of the boutique districts in small French towns.</p>
-              <p><strong>Start your adventure</strong> with café au lait at our local coffee shop (I insist on proper coffee before any shopping expedition!), then let me guide you through our treasure hunt. Begin at Bella's Dresser, <em>naturellement,</em> where I've curated pieces that blend French sophistication with Minnesota practicality. <em>C'est parfait!</em></p>
               <a href="/blog/downtown-pequot-lakes-shopping-guide.html" class="read-more">Read More →</a>
             </div>
           </article>
@@ -265,13 +246,12 @@
           <article class="blog-post">
             <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=800&h=200&fit=crop&crop=center" alt="Wedding guest dresses for Gull Lake ceremonies - Elegant cocktail and formal dresses for Brainerd Lakes area weddings at Grand View Lodge and lakeside venues" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">April 5, 2024</p>
+              <p class="blog-date">April 5, 2025</p>
               <h3 class="blog-title">Wedding Guest Dresses for Lakes Area Venues</h3>
               <p class="blog-meta">By Bella Dubois | Wedding Fashion</p>
             </div>
             <div class="blog-content">
-              <p><em>Mes amours,</em> wedding guest dressing is an art form! In France, we have a saying: <em>"Il faut être élégante sans éclipser la mariée"</em> - be elegant without overshadowing the bride. This philosophy has served me well at château weddings and now here at these magical lakeside celebrations.</p>
-              <p><strong>For outdoor ceremonies</strong> at Grand View Lodge or along Gull Lake's shores, choose flowing fabrics that dance with the breeze - think chiffon, silk, or high-quality cotton blends. Midi lengths are <em>parfait</em> for navigating grass and docks while maintaining elegance. <em>Et voilà!</em> You'll be comfortable and chic!</p>
+              <p><em>Mes amours,</em> wedding guest dressing is an art form! In France, we have a saying: <em>"Il faut être élégante sans éclipser la mariée"</em> - be elegant without overshadowing the bride.</p>
               <a href="/blog/wedding-guest-dresses-lakes-area.html" class="read-more">Read More →</a>
             </div>
           </article>
@@ -279,13 +259,12 @@
           <article class="blog-post">
             <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&h=200&fit=crop&crop=center" alt="Spring dress collection Pequot Lakes - New arrivals of pastel floral sundresses and Easter dresses for Brainerd Lakes area shoppers at Bella's Dresser boutique" class="blog-image">
             <div class="blog-header">
-              <p class="blog-date">March 18, 2024</p>
+              <p class="blog-date">March 18, 2025</p>
               <h3 class="blog-title">Spring Fashion Arrives in the Brainerd Lakes</h3>
               <p class="blog-meta">By Bella Dubois | New Arrivals</p>
             </div>
             <div class="blog-content">
-              <p><em>Mes chéries,</em> spring in Minnesota reminds me so much of early April in Provence - that magical moment when winter releases its grip and everything begins to bloom! I've carefully selected pieces that capture this spirit of renewal.</p>
-              <p><strong>The new collection features:</strong> Delicate florals that would make the gardens of Giverny jealous, fabrics so light they seem to float (perfect for those unpredictable spring breezes off the lake), and versatile pieces that transform from a casual morning at the farmers market to an elegant dinner at Breezy Point. <em>C'est magnifique!</em> Come see how French joie de vivre meets Minnesota spring!</p>
+              <p><em>Mes chéries,</em> spring in Minnesota reminds me so much of early April in Provence - that magical moment when winter releases its grip and everything begins to bloom!</p>
               <a href="/blog/spring-fashion-brainerd-lakes.html" class="read-more">Read More →</a>
             </div>
           </article>
